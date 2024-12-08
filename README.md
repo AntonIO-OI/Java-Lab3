@@ -1,4 +1,4 @@
-# Lab 5
+# Lab 3
 ### Author: Anton Bur, Group IP-22, Variant #3
 
 ---
@@ -43,3 +43,21 @@ Ensure [Maven](https://maven.apache.org/guides/getting-started/maven-in-five-min
    ```bash  
    mvn test  
    ```  
+
+### How to Generate Javadoc
+
+#### 1. Using `javadoc` Command:
+1. Open a terminal in the project root directory.
+2. Run the following command to generate the Javadoc:
+   ```bash
+   javadoc -d docs -sourcepath src/main/java -subpackages vegetable
+   ```
+3. After the process completes, navigate to the `/docs` folder to view the generated documentation.
+
+#### 2. Using Maven:
+1. Open a terminal in the project root directory.
+2. Run the following Maven command to generate the Javadoc:
+   ```bash
+   mvn javadoc:javadoc
+   ```
+3. Once the process is finished, navigate to the `/target/reports/apidocs` folder to access the generated documentation.
